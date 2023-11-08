@@ -1,8 +1,13 @@
+import pymysql
+
 from app import app
 from config import mysql
 from flask import jsonify
-from flask import flash, request
+from flask import request
 
+# flask 2.2.4
+# Flask-Cors 3.0.10
+# flask -MySQL 1.52
 
 @app.route('/pais/create', methods=['POST'])
 def create_pais():
